@@ -21,4 +21,14 @@
     <string name="etPassword_register">Masukkan Password</string>
     <string name="tRePassword_register">Re-Password</string>
     <string name="etRePassword_register">Masukkan ulang Password</string>
+    <!--activity_task-->
+    <string name="tWelcome_task">Selamat Datang</string>
+    <string name="tNama_task">Nama</string>
+    <string name="tTask_task">Task</string>
+    <string name="etTask_task">Masukkan Task</string>
+    <string name="tJenis_task">Jenis Task</string>
+    <string name="etJenis_task">Masukkan Jenis Task</string>
+    <string name="tTime_task">Time Task</string>
+    <string name="etTime_task">Masukkan Time Task</string>
+    <string name="fabAdd_task">Tambah Task</string>
 </resources>

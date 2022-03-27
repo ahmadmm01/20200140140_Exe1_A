@@ -4,6 +4,159 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#202020"
     tools:context=".activity_task">
+
+    <TextView
+        android:id="@+id/tWelcome_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/tWelcome_task"
+        android:textColor="#80FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/tNama_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/tNama_task"
+        android:textColor="#00BCD4"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tWelcome_task"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toEndOf="@+id/tWelcome_task"
+        app:layout_constraintTop_toTopOf="@+id/tWelcome_task"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tTask_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/tTask_task"
+        android:textColor="#80FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/tWelcome_task"
+        app:layout_constraintTop_toBottomOf="@+id/tWelcome_task"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/etTask1_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tTask_task"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tWelcome_task"
+        app:layout_constraintTop_toBottomOf="@+id/tTask_task"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/etTask_task"
+        android:layout_width="359dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/etTask_task"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#1AFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tWelcome_task"
+        app:layout_constraintTop_toBottomOf="@+id/etTask1_task"
+        app:layout_constraintVertical_bias="0.01"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tJenis_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tJenis_task"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etTask_task"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/tWelcome_task"
+        app:layout_constraintTop_toBottomOf="@+id/etTask_task"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/etJenis_task"
+        android:layout_width="359dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/etJenis_task"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#1AFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tWelcome_task"
+        app:layout_constraintTop_toBottomOf="@+id/tJenis_task"
+        app:layout_constraintVertical_bias="0.01"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tTime_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tTime_task"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etTask_task"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/tWelcome_task"
+        app:layout_constraintTop_toBottomOf="@+id/etJenis_task"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/etTime_task"
+        android:layout_width="359dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/etTime_task"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#1AFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tWelcome_task"
+        app:layout_constraintTop_toBottomOf="@+id/tTime_task"
+        app:layout_constraintVertical_bias="0.01"
+        tools:ignore="TextContrastCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="@string/fabAdd_task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/etTime_task"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:focusable="true" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
