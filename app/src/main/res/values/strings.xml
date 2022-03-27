@@ -31,4 +31,12 @@
     <string name="tTime_task">Time Task</string>
     <string name="etTime_task">Masukkan Time Task</string>
     <string name="fabAdd_task">Tambah Task</string>
+    <!--activity_result-->
+    <string name="tTitle_result">Task</string>
+    <string name="tTask_result">Task</string>
+    <string name="tNamaTask_result">Nama Task</string>
+    <string name="tJenis_result">Jenis</string>
+    <string name="tJenisTask_result">Jenis Task</string>
+    <string name="tTime_result">Time</string>
+    <string name="tTimeTask_result">Time Task</string>
 </resources>
