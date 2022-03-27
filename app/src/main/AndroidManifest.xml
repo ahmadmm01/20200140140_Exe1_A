@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Exercise1_140_A">
         <activity
+            android:name=".activity_register"
+            android:exported="false" />
+        <activity
             android:name=".activity_login"
             android:exported="true">
             <intent-filter>
