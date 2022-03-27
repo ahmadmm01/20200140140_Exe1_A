@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Exercise1_140_A">
         <activity
+            android:name=".activity_result"
+            android:exported="false" />
+        <activity
             android:name=".activity_task"
             android:exported="false" />
         <activity
