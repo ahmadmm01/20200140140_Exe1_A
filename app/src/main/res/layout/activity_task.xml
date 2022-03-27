@@ -38,12 +38,13 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <TextView
-        android:id="@+id/tTask_task"
+        android:id="@+id/tTitle_task"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="@string/tTask_task"
+        android:text="@string/tTitle_task"
         android:textColor="#80FFFFFF"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
@@ -52,7 +53,7 @@
         app:layout_constraintVertical_bias="0.02" />
 
     <TextView
-        android:id="@+id/etTask1_task"
+        android:id="@+id/tTask_task"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tTask_task"
@@ -61,7 +62,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tWelcome_task"
-        app:layout_constraintTop_toBottomOf="@+id/tTask_task"
+        app:layout_constraintTop_toBottomOf="@+id/tTitle_task"
         app:layout_constraintVertical_bias="0.03" />
 
     <EditText
@@ -70,7 +71,7 @@
         android:layout_height="50dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="@string/etTask_task"
+        android:hint="@string/etNamaTask_task"
         android:inputType="textPersonName"
         android:textColor="#FFFFFF"
         android:textColorHint="#1AFFFFFF"
@@ -78,7 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tWelcome_task"
-        app:layout_constraintTop_toBottomOf="@+id/etTask1_task"
+        app:layout_constraintTop_toBottomOf="@+id/tTask_task"
         app:layout_constraintVertical_bias="0.01"
         tools:ignore="TextContrastCheck" />
 
