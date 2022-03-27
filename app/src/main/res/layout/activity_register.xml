@@ -22,7 +22,7 @@
         tools:ignore="ImageContrastCheck" />
 
     <TextView
-        android:id="@+id/tRegister"
+        android:id="@+id/tRegister_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="0.05" />
 
     <TextView
-        android:id="@+id/tNama"
+        android:id="@+id/tNama_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tNama_register"
@@ -46,11 +46,11 @@
         app:layout_constraintEnd_toEndOf="@+id/img_register"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/img_register"
-        app:layout_constraintTop_toBottomOf="@+id/tRegister"
+        app:layout_constraintTop_toBottomOf="@+id/tRegister_register"
         app:layout_constraintVertical_bias="0.07" />
 
     <EditText
-        android:id="@+id/etNama"
+        android:id="@+id/etNama_register"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="@drawable/textview_background"
@@ -66,11 +66,11 @@
         app:layout_constraintEnd_toEndOf="@+id/img_register"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/img_register"
-        app:layout_constraintTop_toBottomOf="@+id/tNama"
+        app:layout_constraintTop_toBottomOf="@+id/tNama_register"
         app:layout_constraintVertical_bias="0.05" />
 
     <TextView
-        android:id="@+id/tEmail"
+        android:id="@+id/tEmail_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tEmail_register"
@@ -79,11 +79,11 @@
         app:layout_constraintEnd_toEndOf="@+id/img_register"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/img_register"
-        app:layout_constraintTop_toBottomOf="@+id/etNama"
+        app:layout_constraintTop_toBottomOf="@+id/etNama_register"
         app:layout_constraintVertical_bias="0.05" />
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etEmail_register"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="@drawable/textview_background"
@@ -99,11 +99,11 @@
         app:layout_constraintEnd_toEndOf="@+id/img_register"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/img_register"
-        app:layout_constraintTop_toBottomOf="@+id/tEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tEmail_register"
         app:layout_constraintVertical_bias="0.05" />
 
     <TextView
-        android:id="@+id/tPassword"
+        android:id="@+id/tPassword_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tPassword_register"
@@ -112,11 +112,11 @@
         app:layout_constraintEnd_toEndOf="@+id/img_register"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/img_register"
-        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail_register"
         app:layout_constraintVertical_bias="0.05" />
 
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/etPassword_register"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="@drawable/textview_background"
@@ -133,11 +133,11 @@
         app:layout_constraintEnd_toEndOf="@+id/img_register"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/img_register"
-        app:layout_constraintTop_toBottomOf="@+id/tPassword"
+        app:layout_constraintTop_toBottomOf="@+id/tPassword_register"
         app:layout_constraintVertical_bias="0.05" />
 
     <TextView
-        android:id="@+id/tRePassword"
+        android:id="@+id/tRePassword_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tRePassword_register"
@@ -146,11 +146,11 @@
         app:layout_constraintEnd_toEndOf="@+id/img_register"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/img_register"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword_register"
         app:layout_constraintVertical_bias="0.05" />
 
     <EditText
-        android:id="@+id/etRePassword"
+        android:id="@+id/etRePassword_register"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="@drawable/textview_background"
@@ -167,11 +167,11 @@
         app:layout_constraintEnd_toEndOf="@+id/img_register"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/img_register"
-        app:layout_constraintTop_toBottomOf="@+id/tRePassword"
+        app:layout_constraintTop_toBottomOf="@+id/tRePassword_register"
         app:layout_constraintVertical_bias="0.05" />
 
     <Button
-        android:id="@+id/btRegister"
+        android:id="@+id/btRegister_register"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginTop="24dp"
@@ -181,7 +181,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/img_register"
         app:layout_constraintStart_toStartOf="@+id/img_register"
-        app:layout_constraintTop_toBottomOf="@+id/etRePassword"
+        app:layout_constraintTop_toBottomOf="@+id/etRePassword_register"
         app:layout_constraintVertical_bias="0.1"
         tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
 
