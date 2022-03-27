@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Exercise1_140_A</string>
+    <!--activity_login-->
+    <string name="login_logo">Login logo</string>
+    <string name="tWelcome_login">Welcome in Todo App</string>
+    <string name="tNama_login">Nama</string>
+    <string name="etNama_login">Masukkan Nama</string>
+    <string name="tPassword_login">Password</string>
+    <string name="etPassword_login">Masukkan Password</string>
+    <string name="bsignin_login">Sign In</string>
+    <string name="tNew_login">New in Todo App?</string>
+    <string name="tRegister_login">Register</string>
 </resources>
