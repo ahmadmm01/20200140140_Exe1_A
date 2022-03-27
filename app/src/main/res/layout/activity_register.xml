@@ -4,6 +4,185 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#202020"
     tools:context=".activity_register">
+
+    <ImageView
+        android:id="@+id/img_register"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/register_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/logo_account"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/tRegister_register"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_register"
+        app:layout_constraintTop_toBottomOf="@+id/img_register"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/tNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tNama_register"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_register"
+        app:layout_constraintTop_toBottomOf="@+id/tRegister"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_background"
+        android:drawableLeft="@drawable/icon_account"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/etNama_register"
+        android:inputType="textPersonName|text"
+        android:paddingLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#1AFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_register"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/img_register"
+        app:layout_constraintTop_toBottomOf="@+id/tNama"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/tEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tEmail_register"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_register"
+        app:layout_constraintTop_toBottomOf="@+id/etNama"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_background"
+        android:drawableLeft="@android:drawable/sym_action_email"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/etEmail_register"
+        android:inputType="textPersonName|text"
+        android:paddingLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#1AFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_register"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/img_register"
+        app:layout_constraintTop_toBottomOf="@+id/tEmail"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/tPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tPassword_register"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_register"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_background"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/etPassword_register"
+        android:inputType="textPersonName|text|textPassword"
+        android:paddingLeft="12dp"
+        android:password="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#1AFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_register"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/img_register"
+        app:layout_constraintTop_toBottomOf="@+id/tPassword"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/tRePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tRePassword_register"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_register"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/etRePassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_background"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/etRePassword_register"
+        android:inputType="textPersonName|text|textPassword"
+        android:paddingLeft="12dp"
+        android:password="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#1AFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_register"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/img_register"
+        app:layout_constraintTop_toBottomOf="@+id/tRePassword"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/btRegister"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_background"
+        android:text="@string/tRegister_register"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_register"
+        app:layout_constraintStart_toStartOf="@+id/img_register"
+        app:layout_constraintTop_toBottomOf="@+id/etRePassword"
+        app:layout_constraintVertical_bias="0.1"
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

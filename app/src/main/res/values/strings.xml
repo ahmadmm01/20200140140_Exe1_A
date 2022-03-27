@@ -10,4 +10,15 @@
     <string name="bsignin_login">Sign In</string>
     <string name="tNew_login">New in Todo App?</string>
     <string name="tRegister_login">Register</string>
+    <!--activity_register-->
+    <string name="register_logo">Register logo</string>
+    <string name="tRegister_register">Register</string>
+    <string name="tNama_register">Nama</string>
+    <string name="etNama_register">Masukkan Nama</string>
+    <string name="tEmail_register">E-Mail</string>
+    <string name="etEmail_register">Masukkan E-Mail</string>
+    <string name="tPassword_register">Password</string>
+    <string name="etPassword_register">Masukkan Password</string>
+    <string name="tRePassword_register">Re-Password</string>
+    <string name="etRePassword_register">Masukkan ulang Password</string>
 </resources>
