@@ -11,13 +11,14 @@ import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 
-public class activity_register extends AppCompatActivity {
-
+public class activity_register extends AppCompatActivity
+{
     EditText et_Nama, et_Email, et_Password, et_RePassword;
     Button btRegister;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
@@ -27,22 +28,27 @@ public class activity_register extends AppCompatActivity {
         et_RePassword = findViewById(R.id.etRePassword_register);
         btRegister = findViewById(R.id.btRegister_register);
 
-        btRegister.setOnClickListener(new View.OnClickListener() {
+        btRegister.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
-
-                if(et_Nama.getText().toString().isEmpty() || et_Email.getText().toString().isEmpty() || et_Password.getText().toString().isEmpty() || et_RePassword.getText().toString().isEmpty()) {
+            public void onClick(View view)
+            {
+                if(et_Nama.getText().toString().isEmpty() || et_Email.getText().toString().isEmpty() || et_Password.getText().toString().isEmpty() || et_RePassword.getText().toString().isEmpty())
+                {
                     Snackbar.make(view, "All data is required to be filled!", Snackbar.LENGTH_LONG).show();
                 }
-                else {
-                    if(et_Password.getText().toString().equals(et_RePassword.getText().toString())) {
+                else
+                {
+                    if(et_Password.getText().toString().equals(et_RePassword.getText().toString()))
+                    {
                         Toast.makeText(getApplicationContext(), "Successfully Register!", Toast.LENGTH_LONG).show();
 
                         Intent i = new Intent(getApplicationContext(),activity_task.class);
 
                         startActivity(i);
                     }
-                    else {
+                    else
+                    {
                         Snackbar.make(view, "Password and Repassword must be same!", Snackbar.LENGTH_LONG).show();
                     }
                 }
