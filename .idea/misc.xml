@@ -5,11 +5,11 @@
       <map>
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Exercise1_140_A/app/src/main/res/drawable/button_background.xml" value="0.204" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Exercise1_140_A/app/src/main/res/drawable/textview_background.xml" value="0.204" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Exercise1_140_A/app/src/main/res/layout/activity_login.xml" value="0.16893115942028986" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Exercise1_140_A/app/src/main/res/layout/activity_login.xml" value="0.19895833333333332" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Exercise1_140_A/app/src/main/res/layout/activity_main.xml" value="0.1585144927536232" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Exercise1_140_A/app/src/main/res/layout/activity_register.xml" value="0.17391304347826086" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Exercise1_140_A/app/src/main/res/layout/activity_result.xml" value="0.25" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Exercise1_140_A/app/src/main/res/layout/activity_task.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Exercise1_140_A/app/src/main/res/layout/activity_register.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Exercise1_140_A/app/src/main/res/layout/activity_result.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Exercise1_140_A/app/src/main/res/layout/activity_task.xml" value="0.19895833333333332" />
       </map>
     </option>
   </component>
