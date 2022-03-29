@@ -40,4 +40,7 @@
     <string name="tJenisTask_result">Jenis Task</string>
     <string name="tTime_result">Time</string>
     <string name="tTimeTask_result">Time Task</string>
+    <!--menu-->
+    <string name="mSubmit">Submit</string>
+    <string name="mLogout">Logout</string>
 </resources>
