@@ -85,10 +85,18 @@ public class activity_login extends AppCompatActivity
                 Toast t = Toast.makeText(getApplicationContext(),"Input the correct password!", Toast.LENGTH_LONG);
                 t.show();
             }
-            else
+            else if(!name.equals(namecheck) && !password.equals(passcheck))
             {
                 Toast t = Toast.makeText(getApplicationContext(),"Input the correct name and password!", Toast.LENGTH_LONG);
                 t.show();
+            }
+            else if(name.isEmpty())
+            {
+                et_Nama.setError("Name is required!");
+            }
+            else if(password.isEmpty())
+            {
+                et_Password.setError("Password is required");
             }
         }
     }
