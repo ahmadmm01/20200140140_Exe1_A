@@ -33,24 +33,36 @@ public class activity_register extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                if(et_Nama.getText().toString().isEmpty() || et_Email.getText().toString().isEmpty() || et_Password.getText().toString().isEmpty() || et_RePassword.getText().toString().isEmpty())
+                if(et_Nama.getText().toString().isEmpty() && et_Email.getText().toString().isEmpty())
                 {
-                    Snackbar.make(view, "All data is required to be filled!", Snackbar.LENGTH_LONG).show();
+                    et_Nama.setError("Name is required!");
+                    et_Email.setError("E-mail is required!");
                 }
-                else
+                else if(et_Nama.getText().toString().isEmpty())
                 {
-                    if(et_Password.getText().toString().equals(et_RePassword.getText().toString()))
-                    {
-                        Toast.makeText(getApplicationContext(), "Successfully Register!", Toast.LENGTH_LONG).show();
+                    et_Nama.setError("Name is required!");
+                }
+                else if(et_Email.getText().toString().isEmpty())
+                {
+                    et_Email.setError("E-mail is required!");
+                }
+                else if(!et_Nama.toString().isEmpty() && !et_Email.getText().toString().isEmpty() && !et_Password.getText().toString().equals(et_RePassword.getText().toString()))
+                {
+                    Snackbar.make(view, "Password and Repassword must be same!", Snackbar.LENGTH_LONG).show();
+                }
+                else if(!et_Nama.toString().isEmpty() && !et_Email.getText().toString().isEmpty() && et_Password.getText().toString().equals(et_RePassword.getText().toString()))
+                {
+                    Toast.makeText(getApplicationContext(), "Successfully Register!", Toast.LENGTH_LONG).show();
 
-                        Intent i = new Intent(getApplicationContext(),activity_task.class);
+                    Bundle b = new Bundle();
 
-                        startActivity(i);
-                    }
-                    else
-                    {
-                        Snackbar.make(view, "Password and Repassword must be same!", Snackbar.LENGTH_LONG).show();
-                    }
+                    b.putString("a", et_Nama.getText().toString().trim());
+
+                    Intent in = new Intent(getApplicationContext(), activity_task.class);
+
+                    in.putExtras(b);
+
+                    startActivity(in);
                 }
             }
         });
